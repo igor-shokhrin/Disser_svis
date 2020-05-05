@@ -1,8 +1,6 @@
-import flask_restful
-from flask import jsonify, request, make_response
+from flask import jsonify
 from flask_restful import Resource, reqparse
-import test_sqlite_db as req_db
-
+from db import test_sqlite_db as req_db
 
 parser = reqparse.RequestParser()
 parser.add_argument('cmd', required=True)

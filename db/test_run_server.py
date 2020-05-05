@@ -1,10 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import test_sqlite_db as db_server
-from test_resource import ApiResource
+from db.test_resource import ApiResource
 from flask_restful import Api
-from flask import Flask, render_template, request, url_for, jsonify
+from flask import Flask
 
 app = Flask(__name__)
 api = Api(app)
