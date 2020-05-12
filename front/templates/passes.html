@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>No name project</title>
+		<!-- Bootstrap -->
+		<link href="static/bootstrap.min.css" rel="stylesheet">
+		<link href="static/styles.css?v=1.2" rel="stylesheet">
+		<link href="static/queries.css?v=1.2" rel="stylesheet">
+		<link rel="stylesheet" href="static/flexslider.css?v=1.2" type="text/css">
+		<link rel="stylesheet" href="static/animate.css" type="text/css">
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+
+
+
+
+		<![endif]-->
+
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-table.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/datatable.css') }}">
+<script type=text/javascript src="{{ url_for('static', filename='js/bootstrap-table.js') }}"></script>
+<script type=text/javascript src="{{ url_for('static', filename='js/Chart.bundle.js') }}"></script>
+<script type=text/javascript src="{{ url_for('static', filename='js/moment.js') }}"></script>
+<script type=text/javascript src="{{ url_for('static', filename='js/datatable.js') }}"></script>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-table.js"></script>
+<script type="text/javascript" src="js/Chart.bundle.js"></script>
+<script type="text/javascript" src="js/moment.js"></script>
+<script type="text/javascript" src="js/datatable.js"></script>
+<link rel="stylesheet" href="css/bootstrap-table.css">
+<link rel="stylesheet" href="css/datatable.css">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="…">
+
+    		<link rel="stylesheet" href="static/search.css" type="text/css">
+    <script type=text/javascript src="{{ url_for('static', filename='js/newmes.js') }}"></script>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="…">
+
+    		<link rel="stylesheet" href="static/search.css" type="text/css">
+    <script type=text/javascript src="{{ url_for('static', filename='js/newmes.js') }}"></script>
+
+
+            <title>JS-datatable examples</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->60.2
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/plugins/unescaped-markup/prism-unescaped-markup.css">
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/css.min/bootstrap-table.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/css.min/bootstrap-table-filter-control.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/css.min/datatable.min.css">
+    <!--
+    <link rel="stylesheet" href="../css.min/bootstrap-table.min.css">
+    <link rel="stylesheet" href="../css.min/bootstrap-table-filter-control.min.css">
+    <link rel="stylesheet" href="../css/datatable.css">
+    -->
+    <style>
+        nav[data-toggle='toc'] {
+          margin-top: 30px;
+        }
+
+        /* small screens */
+        @media (max-width: 768px) {
+          /* override the Affix plugin so that the navigation isn't sticky */
+          nav.affix[data-toggle='toc'] {
+            position: static;
+          }
+          nav[data-toggle='toc'] .nav .nav {
+            display: block;
+          }
+        }
+        p {
+            text-align: justify;
+        }
+    </style>
+
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="responsive-logo"></div>
+					<div class="pullcontainer">
+
+						<a href="#" id="pull"><i class="fa fa-bars fa-2x"></i></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-2">
+						<nav>
+							<div class="logo-holder"></div>
+							<ul class="clearfix">
+								<li><a href="/main">Камеры</a></li>
+								<li><a href="/passes" class="r_spacer">Пропуска</a></li>
+								<li><a href="/notifications">Уведомления</a></li>
+								<li><a href="/settings">Настройки</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+                <div class="container-fluid intro" id="about">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="row search">
+                        <form action="#" autocomplete="off">
+                            <fieldset class="url">
+                              <input id="url" type="text" name="url" required>
+                              <label for="url"><i class="fa fa-search" aria-hidden="true"></i> Введите номер</label>
+                              <div class="after"></div>
+                            </fieldset>
+                            <fieldset class="enter">
+                              <button>Поиск</button>
+                            </fieldset>
+                          </form>
+                        </div>
+			        </div>
+		        </div>
+                </div>
+                <div class="container-fluid intro" id="about">
+                    <div class="col-md-8 col-md-offset-2">
+
+<table class="table datatable"
+                       data-id-field="code"
+                       data-sort-name="value1"
+                       data-sort-order="desc"
+                       data-pagination="false"
+                       data-show-pagination-switch="false">
+                    <thead>
+                        <tr>
+                            <th data-field="code" data-sortable="true">Номер</th>
+                            <th data-field="value1" data-sortable="true">Дата начала</th>
+                            <th data-field="value2" data-sortable="true">Дата окончания</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>н123аа150</td>
+                            <td>1 мая 2020</td>
+                            <td>9 мая 2020</td>
+                        </tr>
+                        <tr>
+                            <td>вв121кц74</td>
+                            <td>2августа 2019 </td>
+                            <td>2 августа 2020 </td>
+                        </tr>
+                        <tr>
+                            <td>н333нн33</td>
+                            <td>1 января 2021</td>
+                            <td>1 января 2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+                    </div>
+		        </div>
+            		</header>
+
+		<footer id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 footer-leftcol">
+
+						<p><span class="bold-16p">MISIS</span><br>
+						Moscow<br>
+						Batya company, 2019 <a href="#">m1807186@edu.misis.ru</a>
+						</p>
+					</div>
+					<div class="col-md-4 footer-midcol">
+						<ul>
+							<li><a href="#" class="telegram-icon">Twitter</a></li>
+							<li><a href="#" class="vk-icon">Facebook</a></li>
+						</ul>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-4 footer-rightcol">
+						<p>Designed by <a href="http://www.vk.nanfeldw.com/"><img src="static/img/me.jpg" alt="Yebo Logo"></a><a href="http://www.vk.nanfeldw.com/">Nikita Umnikov</a></p>
+						<p class="nopadding">Developed by <a href="http://www.vk.nanfeldw.com/">Nikita Umnikov</a></p>
+						<p class="nopadding">And <a href="https://vk.com/id122737885">Igor Shokhrin</a></p>
+					</div>
+				</div>
+			</div>
+
+                <!-- JavaScript -->
+
+
+		</footer>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.flexslider.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/modernizr.js"></script>
+		<script src="js/waypoints.min.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/prism.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/components/prism-javascript.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/components/prism-markup.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/components/prism-json.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/components/prism-yaml.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/js.min/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/js.min/bootstrap-table-filter-control.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/js.min/Chart.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/js.min/js-yaml.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/js.min/moment.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/js.min/datatable.min.js"></script>
+
+    <!--
+    <script type="text/javascript" src="../js/bootstrap-table.js"></script>
+    <script type="text/javascript" src="../js/bootstrap-table-filter-control.js"></script>
+
+    <script type="text/javascript" src="../js/Chart.bundle.js"></script>
+    <script type="text/javascript" src="../js/moment.js"></script>
+    <script type="text/javascript" src="../js.min/js-yaml.min.js"></script>
+
+    <script type="text/javascript" src="../js/datatable.js"></script>
+    -->
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            $('#js-customization-example').datatable({
+                bar: {
+                    height: 440
+                },
+                scatter: {
+                    height: 400
+                },
+                comparison: {
+                    height: 400
+                },
+                icon: {
+                    bar: '<span class="glyphicon glyphicon-align-left"></span>',
+                    scatter: '<span class="glyphicon glyphicon-th-large"></span>',
+                    comparison: '<span class="glyphicon glyphicon-align-left"></span>',
+                    off: '<span class="glyphicon glyphicon-off"></span>',
+                    caret: '<span class="caret"></span>',
+                    chartable: '<span class="glyphicon glyphicon-stats"></span>'
+                },
+                label: {
+                    bar: 'Custom Bar',
+                    scatter: 'Custom Scatter',
+                    comparison: 'Custom Comparison',
+                    off: 'Off',
+                    select_x_axis: 'Select data field for X-axis',
+                    select_y_axis: 'Select data field for Y-axis',
+                    select_set: 'Select set',
+                    select_a_row: 'Select row A',
+                    select_b_row: 'Select row B'
+                },
+                button_css:{
+                    bar: 'btn btn-primary selector-button',
+                    scatter: 'btn btn-danger selector-button',
+                    comparison: 'btn btn-warning selector-button',
+                    off: 'btn btn-default selector-button'
+                }
+            });
+        });
+    </script>
+	</body>
+</html>
