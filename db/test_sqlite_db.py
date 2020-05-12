@@ -4,8 +4,11 @@ import sqlite3
 def create_db_if_not_exist(data_base):
     conn = sqlite3.connect(data_base)
     cur = conn.cursor()
-    cur.execute('CREATE TABLE IF NOT EXISTS passes(  Name TEXT,'
+    cur.execute('CREATE TABLE IF NOT EXISTS passes(     Name TEXT,'
                 '                                       Surname TEXT,'
+                '                                       Plate TEXT,'
+                '                                       dataFrom TEXT,'
+                '                                       dataTo TEXT,'
                 '                                       Department_id INT,'
                 '                                       id_type_of_passes INT)')
     cur.execute('CREATE TABLE IF NOT EXISTS type_of_pass(  responsible_person TEXT,'
@@ -63,7 +66,7 @@ def add_data_in_table(data_base, table, data):
     conn = sqlite3.connect(data_base)
     cur = conn.cursor()
     # querry_column =
-    cur.execute('INSERT INTO passes VALUES(?,?,?,?)', data)
+    cur.execute('INSERT INTO passes VALUES(?,?,?,?,?,?,?)', data)
     conn.commit()
     cur.close()
     conn.close()
@@ -98,7 +101,7 @@ def get_tables_name(data_base):
 
 
 if __name__ == '__main__':
-    data_base = './test_data/1st_db_test.db'
+    data_base = 'db/test_data/1st_db_test.db'
     table = 'passes'
     create_db_if_not_exist(data_base)
     get_tables_name(data_base)

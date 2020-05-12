@@ -12,7 +12,7 @@ parser.add_argument('resource_data')
 parser.add_argument('param_column')
 parser.add_argument('param_val')
 
-data_base = './test_data/1st_db_test.db'
+data_base = './db/test_data/1st_db_test.db'
 
 supported_get_cmd = {"get_value_from_table":
                          {"usage": "{'cmd': 'get_value_from_table', 'table': 'passes', 'resource_id': 'Name', 'resource_data': 'Kir9'}",
@@ -38,7 +38,7 @@ supported_get_cmd = {"get_value_from_table":
                              "keys": []}
                      }
 supported_post_cmd = {"add_value_to_table":
-                          {"usage": "{'cmd': 'add_value_to_table', 'table': 'passes', 'data': ['Uzziel', 'Gonzalez', 6, 4]}",
+                          {"usage": "{'cmd': 'add_value_to_table', 'table': 'passes', 'data': ['Uzziel', 'Gonzalez', 'A456AA777', '01.12.2019', '01.12.2020', 6, 4]}",
                            "keys": ['table', 'data']},
                       "update_value_in_table":
                           {"usage": "{'cmd': 'update_value_in_table', 'table': 'passes', 'resource_id': 'Name', 'resource_data': 'Kir9', 'param_column': 'Department_id', 'param_val': 3}",
@@ -53,6 +53,7 @@ supported_post_cmd = {"add_value_to_table":
                         {"usage": "supported post commands add_value_to_table, update_value_in_table, delete_value_from_table, help",
                         "keys": []}
                       }
+
 
 class ApiResource(Resource):
     def get(self):
