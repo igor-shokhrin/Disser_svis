@@ -12,6 +12,10 @@
 		<link rel="stylesheet" href="static/flexslider.css?v=1.2" type="text/css">
 		<link rel="stylesheet" href="static/animate.css" type="text/css">
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<link rel="stylesheet"
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -122,11 +126,124 @@
 					</div>
 				</div>
 			</div>
-                </div>
 
             		</header>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.flexslider.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/modernizr.js"></script>
+		<script src="js/waypoints.min.js"></script>
 
-		<footer id="contact">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/prism.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/components/prism-javascript.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/components/prism-markup.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/components/prism-json.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/components/prism-yaml.min.js"></script>
+
+		<script type="text/javascript" src="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/js.min/bootstrap-table.min.js"></script>
+		<script type="text/javascript" src="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/js.min/bootstrap-table-filter-control.min.js"></script>
+
+		<script type="text/javascript" src="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/js.min/Chart.bundle.min.js"></script>
+		<script type="text/javascript" src="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/js.min/js-yaml.min.js"></script>
+		<script type="text/javascript" src="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/js.min/moment.min.js"></script>
+
+		<script type="text/javascript" src="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/js.min/datatable.min.js"></script>
+
+		<!--
+		<script type="text/javascript" src="../js/bootstrap-table.js"></script>
+		<script type="text/javascript" src="../js/bootstrap-table-filter-control.js"></script>
+
+		<script type="text/javascript" src="../js/Chart.bundle.js"></script>
+		<script type="text/javascript" src="../js/moment.js"></script>
+		<script type="text/javascript" src="../js.min/js-yaml.min.js"></script>
+
+		<script type="text/javascript" src="../js/datatable.js"></script>
+		-->
+		<script type="text/javascript">
+			$( document ).ready(function() {
+				$('#js-customization-example').datatable({
+					bar: {
+						height: 440
+					},
+					scatter: {
+						height: 400
+					},
+					comparison: {
+						height: 400
+					},
+					icon: {
+						bar: '<span class="glyphicon glyphicon-align-left"></span>',
+						scatter: '<span class="glyphicon glyphicon-th-large"></span>',
+						comparison: '<span class="glyphicon glyphicon-align-left"></span>',
+						off: '<span class="glyphicon glyphicon-off"></span>',
+						caret: '<span class="caret"></span>',
+						chartable: '<span class="glyphicon glyphicon-stats"></span>'
+					},
+					label: {
+						bar: 'Custom Bar',
+						scatter: 'Custom Scatter',
+						comparison: 'Custom Comparison',
+						off: 'Off',
+						select_x_axis: 'Select data field for X-axis',
+						select_y_axis: 'Select data field for Y-axis',
+						select_set: 'Select set',
+						select_a_row: 'Select row A',
+						select_b_row: 'Select row B'
+					},
+					button_css:{
+						bar: 'btn btn-primary selector-button',
+						scatter: 'btn btn-danger selector-button',
+						comparison: 'btn btn-warning selector-button',
+						off: 'btn btn-default selector-button'
+					}
+				});
+			});
+		</script>
+		<div style="display: grid; grid-template-columns: 75% 25%; margin-right: 1%; margin-left: 1%; margin-top: 1%;">
+			<div style="margin-left: 5%;">
+					<video width="1300" height="800" controls>
+						<source src="../static/video/test.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+					</video>
+			</div>
+			<div style="display: grid; grid-template-rows: 20% 80%;">
+                    <div class="col-md-8" style="margin-top: 2px;">
+                        <div>
+                        <form action="#" autocomplete="off">
+                            <fieldset >
+                              <input id="url" type="text" name="url" required>
+                              <label for="url"><i class="fa fa-search" aria-hidden="true"></i> Поиск</label>
+                              <div class="after"></div>
+                            </fieldset>
+                            <fieldset>
+                              <button style="width: 100px;">Поиск</button>
+                            </fieldset>
+                          </form>
+                        </div>
+			        </div>
+				<div class="alert alert-secondary" role="alert">
+					<h3 align="center">Номера машин</h3>
+					<ul style="font-size: 30pt;">
+						<li>
+							т250тт<sup>68</sup>
+						</li>
+						<li>
+							т543ас<sup>199</sup>
+						</li>
+						<li>
+							с253кт<sup>197</sup>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<footer id="contact">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 footer-leftcol">
@@ -155,82 +272,4 @@
 
 
 		</footer>
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.flexslider.js"></script>
-		<script src="js/scripts.js"></script>
-		<script src="js/modernizr.js"></script>
-		<script src="js/waypoints.min.js"></script>
-
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/prism.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/components/prism-javascript.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/components/prism-markup.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/components/prism-json.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/components/prism-yaml.min.js"></script>
-
-    <script type="text/javascript" src="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/js.min/bootstrap-table.min.js"></script>
-    <script type="text/javascript" src="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/js.min/bootstrap-table-filter-control.min.js"></script>
-
-    <script type="text/javascript" src="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/js.min/Chart.bundle.min.js"></script>
-    <script type="text/javascript" src="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/js.min/js-yaml.min.js"></script>
-    <script type="text/javascript" src="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/js.min/moment.min.js"></script>
-
-    <script type="text/javascript" src="https://cdn.rawgit.com/toni-heittola/js-datatable/v1.1.0/js.min/datatable.min.js"></script>
-
-    <!--
-    <script type="text/javascript" src="../js/bootstrap-table.js"></script>
-    <script type="text/javascript" src="../js/bootstrap-table-filter-control.js"></script>
-
-    <script type="text/javascript" src="../js/Chart.bundle.js"></script>
-    <script type="text/javascript" src="../js/moment.js"></script>
-    <script type="text/javascript" src="../js.min/js-yaml.min.js"></script>
-
-    <script type="text/javascript" src="../js/datatable.js"></script>
-    -->
-    <script type="text/javascript">
-        $( document ).ready(function() {
-            $('#js-customization-example').datatable({
-                bar: {
-                    height: 440
-                },
-                scatter: {
-                    height: 400
-                },
-                comparison: {
-                    height: 400
-                },
-                icon: {
-                    bar: '<span class="glyphicon glyphicon-align-left"></span>',
-                    scatter: '<span class="glyphicon glyphicon-th-large"></span>',
-                    comparison: '<span class="glyphicon glyphicon-align-left"></span>',
-                    off: '<span class="glyphicon glyphicon-off"></span>',
-                    caret: '<span class="caret"></span>',
-                    chartable: '<span class="glyphicon glyphicon-stats"></span>'
-                },
-                label: {
-                    bar: 'Custom Bar',
-                    scatter: 'Custom Scatter',
-                    comparison: 'Custom Comparison',
-                    off: 'Off',
-                    select_x_axis: 'Select data field for X-axis',
-                    select_y_axis: 'Select data field for Y-axis',
-                    select_set: 'Select set',
-                    select_a_row: 'Select row A',
-                    select_b_row: 'Select row B'
-                },
-                button_css:{
-                    bar: 'btn btn-primary selector-button',
-                    scatter: 'btn btn-danger selector-button',
-                    comparison: 'btn btn-warning selector-button',
-                    off: 'btn btn-default selector-button'
-                }
-            });
-        });
-    </script>
-	</body>
 </html>
