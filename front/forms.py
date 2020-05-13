@@ -7,7 +7,7 @@ class RegisterForm(FlaskForm):
     name = StringField('Имя')
     surname = StringField('Фамилия')
     phone = StringField('Телефон')
-    reason = StringField('Причина въезда')
+    reason = TextAreaField('Причина въезда')
     number = StringField('Телефон')
     date = DateTimeField('Дата')
     time = StringField('Время')
